@@ -1,0 +1,12 @@
+ body {
+    background-color: black;
+    color:white;
+}
+
+img{
+    height:auto;
+    display:block;
+    width:100%;
+    z-index:2;
+}
+
