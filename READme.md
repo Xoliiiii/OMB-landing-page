@@ -1,3 +1,5 @@
+//Find a way to change formatting of the page 
+
 //Notes for the website 
 To fill up space for bigger devices 
 
