@@ -21,6 +21,14 @@ button{
     border-radius:15px;
     background-color:rgba(195, 38, 38, 1);
     border-color:rgba(195, 38, 38, 1);
+    color:white;
+    transition: all 3ms ease-in-out;
+}
+
+button:hover{
+    background-color:white;
+    color:rgba(195, 38, 38, 1) ;
+    border: 1px solid white
 }
 
 .summary{
@@ -38,4 +46,104 @@ button{
 }
 
 
+.overview{
+    background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/159/original/image1.jpg?1704990047");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    padding:300px;
+    box-sizing: border-box;
+    text-align:left;
+    margin:auto 0 ;
+
+}
+
+.overview-content{
+    position:absolute;
+    left:54px;
+}
+
+
+.rating{
+    position:absolute;
+    top:46px;
+}
+
+
+
+@media (min-width:786px){
+    .characterBtn{
+        position:absolute;
+        top:1000px;
+        left:206px;
+        }
+
+   .monse , .cesar , .ruby , .jamal{
+        max-width:250px;
+    }
+}
+
+
+
+@media (max-width:768px){
+    .overview{
+        padding:150px;
+    }
+
+   .rating{
+    position:absolute;
+    top:40px;
+   }
+   
+   .characterBtn{
+    position:absolute;
+    left:400px;
+    top:650px;
+   }
+
+    .overview-content{
+        position:absolute;
+        left:27px;
+        top:90px;
+    }
+}
+
+.rating:not(:checked) > input {
+    position: absolute;
+    appearance: none;
+  }
+  
+  .rating:not(:checked) > label {
+    float: right;
+    cursor: pointer;
+    font-size: 30px;
+    color: #666;
+  }
+  
+  .rating:not(:checked) > label:before {
+    content: '★';
+  }
+  
+  .rating > input:checked + label:hover,
+  .rating > input:checked + label:hover ~ label,
+  .rating > input:checked ~ label:hover,
+  .rating > input:checked ~ label:hover ~ label,
+  .rating > label:hover ~ input:checked ~ label {
+    color: rgba(195, 38, 38, 1) ;
+  }
+  
+  .rating:not(:checked) > label:hover,
+  .rating:not(:checked) > label:hover ~ label {
+    color: rgba(195, 38, 38, 1);
+  }
+  
+  .rating > input:checked ~ label {
+    color: rgba(195, 38, 38, 1);
+  }
+  
+  /* Your default styles for larger screens */
+
+
+  
+  
   
